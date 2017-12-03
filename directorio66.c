@@ -293,12 +293,6 @@ void archivos()
 						}
 						explorer++;
 					}
-					if(visiter==0)
-					{
-						numLineas=explorer;
-						aureo=numLineas;
-						visiter++;
-					}
 					p("%d",numLineas);
 					if(booleano==0)
 					{
@@ -332,11 +326,6 @@ void archivos()
 							{
 								fputc(temporal,copia);
 							}
-							//explorer++;
-						}
-						if(visiter!=0)
-						{
-							numLineas=aureo-4;
 						}
 						fclose(fichero);
 						fclose(copia);
